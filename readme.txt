@@ -1,2 +1,4 @@
-These project is a loacal chatroom in RedHat
-Because these project use absolute path in headfiles,so read head files first
+
+此项目旨在锻炼基于Linux的编程技能，包含多线程编程，网络编程，Linux下curses库的调用等
+
+此项目的不同之处在于使用了curses库进行界面化的设计，并且可以使用鼠标对界面进行操作
