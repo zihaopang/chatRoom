@@ -1,0 +1,33 @@
+#include <curses.h>
+
+int add_face(WINDOW *chat_win,int sockfd,char *user);
+int no_say(WINDOW *win,int sockfd);
+int say(WINDOW *win,int sockfd);
+int short_msg(WINDOW *chat_win,int sockfd,char *user);
+int chat_table(WINDOW *user_win,char *user,int sockfd);
+int out(WINDOW *win,int sockfd);
+int first_table(int sockfd);
+int report_choice_6(int mousex,int mousey);
+int report_choice_9(int mousex,int mousey);
+int change_passwd(int sockfd);
+int report_choice(int mousey,int mousex);
+int rcv_deal();
+int report_choice_7(int mousex,int mousey);
+int user_table(int sockfd);
+int report_choice_4(int mousex,int mousey,int num);
+int admin_table(int sockfd);
+int report_choice_10(int mousex,int mousey);
+int report_choice_5(int mousex,int mousey);
+int get_file(int sockfd);
+void reg_table(int sockfd);
+int report_choice_3(int mousex,int mousey);
+int send_file(int sockfd,WINDOW *chat_win,char *user);
+int main(int argc, char *argv[]);
+void print_msg(void *arg);
+int draw_menu(int sockfd,WINDOW *win,int *num,char (*users)[10]);
+int log_table(int sockfd);
+int report_choice_2(int mousex,int mousey);
+int private_chat(char *user,int sockfd,int flag);
+int remind(char *remind);
+int set(WINDOW *user_win,int sockfd);
+int report_choice_8(int mousex,int mousey);
